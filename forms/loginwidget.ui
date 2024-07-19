@@ -6,14 +6,106 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>366</width>
+    <height>300</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>LoginWidget</string>
+   <string>登录</string>
   </property>
+  <widget class="QLineEdit" name="lineEditUserName">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>70</y>
+     <width>113</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>用户名</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPassword">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>120</y>
+     <width>113</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>密码</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonAdmin">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>270</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>后台登录</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>170</y>
+     <width>82</width>
+     <height>86</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButtonLogin">
+      <property name="text">
+       <string>登录</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonCancel">
+      <property name="text">
+       <string>取消</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonSignup">
+      <property name="text">
+       <string>注册</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButtonCancel</sender>
+   <signal>clicked()</signal>
+   <receiver>LoginWidget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>179</x>
+     <y>211</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>182</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
