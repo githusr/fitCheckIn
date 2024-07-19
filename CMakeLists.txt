@@ -30,6 +30,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         include/usermainwindow.h src/usermainwindow.cpp forms/usermainwindow.ui
         include/admindialog.h src/admindialog.cpp forms/admindialog.ui
         include/adminmainwindow.h src/adminmainwindow.cpp forms/adminmainwindow.ui
+        res.qrc
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET fitCheckIn APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
